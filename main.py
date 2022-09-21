@@ -30,7 +30,7 @@ while again:
                 morse_letter = MORSE[ALPHABET.index(letter)]
                 response += morse_letter + " "
             else:
-                response += f'"Symbol {letter} doesnt have a Morse equivalent"'
+                response += f' "Symbol {letter} doesnt have a Morse equivalent" '
         print(f"Your input converted to Morse code is:\n{response}")
     elif language == "2":
         user_input = input("Enter your phrase in Morse:\n").upper()
@@ -41,7 +41,7 @@ while again:
             elif letter == "":
                 pass
             else:
-                response += f' "{letter}" not recognized as Morse symbol '
+                response += f' "Symbol {letter} not recognized as Morse symbol" '
         print(f"Your input converted to Alphabet is:\n{response.lower()}")
     another = input("Do you want to try again? yes/no\n").lower()
     if another == "no":
